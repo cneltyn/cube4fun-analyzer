@@ -4,14 +4,6 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/api/cube4fun/:path*",
-      "destination": "https://cube4fun.pl/api/:path*"
-    },
-    {
-      "source": "/api/wca/:path*",
-      "destination": "https://www.worldcubeassociation.org/api/v0/:path*"
-    },
-    {
       "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
