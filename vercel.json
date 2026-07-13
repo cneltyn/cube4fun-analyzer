@@ -2,6 +2,14 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/api/cube4fun/:path*",
+      "destination": "/api/cube4fun?path=:path*"
+    },
+    {
+      "source": "/api/wca/:path*",
+      "destination": "/api/wca?path=:path*"
+    },
+    {
       "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
