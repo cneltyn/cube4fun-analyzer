@@ -8,6 +8,7 @@ import { CompetitionPicker } from './components/CompetitionPicker';
 import { EventHeader } from './components/EventHeader';
 import './App.css';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const {
@@ -149,6 +150,7 @@ function App() {
       )}
 
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
